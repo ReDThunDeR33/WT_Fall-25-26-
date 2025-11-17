@@ -78,13 +78,15 @@ Confirm Password:
 <div class="activity">
 Activity Name:
 <br>
-<input type="text" style="width:480px;">
+<input type="text" style="width:480px;"id="acc">
 <br></br>
-<input type="submit" style="width:100px; color:white; background-color:blue;" value="Add Activity" id="acc">
+<input type="submit" style="width:100px; color:white; background-color:blue;" value="Add Activity">
 
 </div>
 <br></br>
-<div class="output2">
+<div id="error2">
+</div>
+<div id="output2">
 </div>
 
 </form>
@@ -132,7 +134,16 @@ function form1(){
 }
 
 function form2(){
-    let activity=document.getElementById("acc").value;
+    let act=document.getElementById("acc").value;
+
+let err=document.getElementById("error2")
+let out=document.getElementById("output2")
+    if(act===""){
+
+        err.innerHTML="Enter Activity Name";
+        return false;
+    }
+
 }
 
 
