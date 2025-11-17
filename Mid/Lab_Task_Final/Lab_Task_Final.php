@@ -71,7 +71,7 @@ Confirm Password:
 
 
 
-<form class="a">
+<form class="a" onsubmit="return form2()">
 <h2 style="text-align: center;">Activity Selection</h2>
 <br>
 
@@ -80,7 +80,7 @@ Activity Name:
 <br>
 <input type="text" style="width:480px;">
 <br></br>
-<input type="submit" style="width:100px; color:white; background-color:blue;" value="Add Activity">
+<input type="submit" style="width:100px; color:white; background-color:blue;" value="Add Activity" id="acc">
 
 </div>
 <br></br>
@@ -120,13 +120,21 @@ function form1(){
 
     }
     output_msg.innerHTML=`
-    Name: ${fname} <br>
-    Email: ${email} <br>
-    Phone: ${phone} <br>
+    <div style="border: solid ; background-color:rgba(104, 201, 104, 1); margin: 20px 0px 0px 0px; border-radius: 12px; padding: 10px ; text-align: left;">
+    <h2> Registration Successful</h2>
+    Name: ${fname} <br></br>
+    Email: ${email} <br></br>
+    Phone: ${phone} <br></br>
+    </div>
     `;
 
     return false;
 }
+
+function form2(){
+    let activity=document.getElementById("acc").value;
+}
+
 
 
 </script>
