@@ -143,6 +143,12 @@ let out=document.getElementById("output2")
         err.innerHTML="Enter Activity Name";
         return false;
     }
+    out.innerHTML+=`
+    <div style="border: solid ; background-color:rgba(104, 201, 104, 1); margin: 20px 0px 0px 0px; border-radius: 12px; padding: 10px ; text-align: left;">
+     ${act}
+    </div>
+    `;
+    return false;
 
 }
 
