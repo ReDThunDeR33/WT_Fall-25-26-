@@ -116,9 +116,18 @@ function form1(){
     }
     if(phone.length!=11){
             error_msg.innerHTML="Enter Correct Phone NUmber";
-            return false;";
+            return false;
 
     }
+    output_msg.innerHTML=`
+    Name: ${fname} <br>
+    Email: ${email} <br>
+    Phone: ${phone} <br>
+    `;
+
+    return false;
+}
+
 
 </script>
 
