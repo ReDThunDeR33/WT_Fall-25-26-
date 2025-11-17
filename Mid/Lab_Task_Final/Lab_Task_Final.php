@@ -28,12 +28,41 @@
 Full Name:
 <br>
 <input type="text" style="width:480px;">
-
-
+<br></br>
+Email:
+<br>
+<input type ="email" style="width:480px;">
+<br></br>
+Phone Number
+<br>
+<input type="tel" style="width:480px;">
+<br></br>
+Password:
+<br>
+<input type="password" style="width:480px;">
+<br></br>
+Confirm Password:
+<br>
+<input type="password" style="width:480px;">
+<br></br>
+<input type="submit" style="width:100px;" value="Register">
 </div>
+<div class="output">
+</div>
+<div class="error">
+</div>
+
+
 </form>
 
 
+
+<form class="a">
+
+
+
+
+</form>
 
 
 </center>
