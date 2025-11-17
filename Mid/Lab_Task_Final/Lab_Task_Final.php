@@ -20,6 +20,13 @@
     text-align: left;
 }
 
+#error{
+    text-align: center;
+    color: red;
+    margin: 10px;
+    
+}
+
 </style>
 
 
@@ -96,6 +103,20 @@ function form1(){
 
     var error_msg=document.getElementById("error");
     var output_msg=document.getElementById("output");
+
+    if(fname==="" || email=== "" || phone==="" || pass==="" || confirm_pass===""){
+    error_msg.innerHTML="Fill up the form";
+
+    return false;
+    }
+    if(pass!==confirm_pass){
+        error_msg.innerHTML="Password does not match";
+        return false;
+
+    }
+    if(phone.length!=11){
+            error_msg.innerHTML="Enter Correct Phone NUmber";
+            return false;";
 
     }
 
